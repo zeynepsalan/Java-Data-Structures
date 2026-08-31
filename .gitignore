@@ -1,0 +1,52 @@
+# ==========================================
+# Java - Derlenmiş Dosyalar ve Çıktılar
+# ==========================================
+*.class
+*.jar
+*.war
+*.ear
+bin/
+out/
+target/
+
+# ==========================================
+# VS Code Yapılandırmaları
+# ==========================================
+.vscode/
+*.code-workspace
+
+# ==========================================
+# Diğer IDE Kalıntıları (IntelliJ, Eclipse vb.)
+# ==========================================
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# ==========================================
+# İşletim Sistemi Kalıntıları (macOS / Windows)
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# ==========================================
+# Henüz Çözülmemiş Lab İskeletleri
+# (Çözümünü tamamladığın labın satırını silebilirsin)
+# ==========================================
+Lab03/
+Lab04/
+Lab05/
+Lab06/
+Lab07/
+Lab08/
+Lab09/
+Lab10/
+Lab11/
+Lab12/
+Lab13/
