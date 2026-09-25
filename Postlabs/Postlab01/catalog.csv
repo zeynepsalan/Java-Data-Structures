@@ -1,0 +1,17 @@
+# CSE201 Post-Lab 1 - ShopCart catalog
+# type,sku,name,price(kurus),rating,extra
+# extra is weightGrams for physical products and sizeMB for digital products.
+#
+# Desk Lamp and Bluetooth Speaker share a price, and so do Java E-book and
+# Lo-fi Album, so the price sort has to fall back to the natural order.
+# Desk Lamp, Mechanical Keyboard and Lo-fi Album share a rating.
+physical,P100,Electric Kettle,89900,4,1200
+physical,P200,Desk Lamp,45950,5,800
+digital,D300,Java E-book,4990,4,12
+physical,P310,Bluetooth Speaker,45950,3,650
+digital,D420,Lo-fi Album,4990,5,85
+physical,P500,Mechanical Keyboard,129900,5,1100
+physical,P610,USB-C Cable,7500,4,60
+digital,D700,Photo Filter Pack,15900,4,240
+physical,P800,Coffee Grinder,214900,4,2300
+physical,P900,Yoga Mat,39900,3,1800

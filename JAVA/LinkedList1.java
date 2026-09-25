@@ -1,6 +1,6 @@
 public class LinkedList1 {
     public static void main(String[] args) {
-        Node node1 = new Node(1);
+        Node1 node1 = new Node1(1);
         LinkedList linkedlist = new LinkedList(node1);
         linkedlist.addToEnd(2);
         linkedlist.addToEnd(3);
@@ -33,29 +33,29 @@ public class LinkedList1 {
     }
 }
 
-class Node {
+class Node1 {
     int data;
-    Node next;
+    Node1 next;
 
-    public Node(int data) {
+    public Node1(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
 class LinkedList {
-    Node head;
+    Node1 head;
 
-    public LinkedList(Node head) {
+    public LinkedList(Node1 head) {
         this.head = head;
     }
 
     public void addToEnd(int data) {
-        Node n = new Node(data);
+        Node1 n = new Node1(data);
         if (head == null) {
             head = n;
         } else {
-            Node current = head;
+            Node1 current = head;
             while (current.next != null) {
                 current = current.next;
             }
@@ -64,15 +64,15 @@ class LinkedList {
     }
 
     public void addToHead(int data) {
-        Node node = new Node(data);
+        Node1 node = new Node1(data);
         node.next = head;
         head = node;
 
     }
 
     public void addNodeAfter(int insertAfter, int data) {
-        Node node = new Node(data);
-        Node current = head;
+        Node1 node = new Node1(data);
+        Node1 current = head;
         while (current != null) {
             if (current.data == insertAfter) {
                 node.next = current.next;
@@ -83,9 +83,9 @@ class LinkedList {
 
     }
 
-    public Node deleteNodeAfter(int deleteData) {
-        Node current = head;
-        Node node = null;
+    public Node1 deleteNodeAfter(int deleteData) {
+        Node1 current = head;
+        Node1 node = null;
         while (current != null && current.next != null) {
             if (current.data == deleteData) {
                 node = current.next;
@@ -97,8 +97,8 @@ class LinkedList {
         return node;
     }
 
-    public Node deleteLast() {
-        Node current = head;
+    public Node1 deleteLast() {
+        Node1 current = head;
         if (current == null || current.next == null) {
             head = null;
             if (current == null) {
@@ -106,7 +106,7 @@ class LinkedList {
             }
             return current;
         }
-        Node node = null;
+        Node1 node = null;
         while (current.next != null) {
             if (current.next.next == null) {
                 node = current.next;
@@ -120,9 +120,9 @@ class LinkedList {
 
     }
 
-    public Node deleteAtStart() {
+    public Node1 deleteAtStart() {
         if (head != null) {
-            Node n = head;
+            Node1 n = head;
             head = head.next;
             return n;
         }
@@ -131,7 +131,7 @@ class LinkedList {
 
     public String toString() {
         String s = "";
-        Node current = head;
+        Node1 current = head;
         while (current != null) {
             s += String.valueOf(current.data) + " --> ";
             current = current.next;
