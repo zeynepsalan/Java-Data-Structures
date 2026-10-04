@@ -1,8 +1,12 @@
 import java.util.Objects;
+import java.util.*;
 
 class Lab02 {
     public static void main(String[] args) {
         // Test your code here...
+
+        String s = "zeynep";
+        LinkedList<String> mylst = new LinkedList<>();
         DoublyLinkedList<String> list = new DoublyLinkedList<>();
 
         list.addLast("zeynep");
